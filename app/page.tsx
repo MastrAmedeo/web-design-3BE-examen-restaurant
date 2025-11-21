@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Parallax from "./components/parallax"
 
 export default function Home() {
   return (
         <>
-        <h1>Terre del Cilento</h1>
-        
+        <div className="pt-150">
+          <h1><Parallax>Terre del Cilento</Parallax></h1>
+        </div>
         </>
   );
 }
