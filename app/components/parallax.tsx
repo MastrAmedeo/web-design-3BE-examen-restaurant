@@ -6,7 +6,7 @@ type ParallaxProps = {
 
 export default function Parallax(props: ParallaxProps) {
     return (
-        <div className = "bg-[#697851] py-3 rounded shadow-md text-center text-bold">
+        <div className = "bg-[#697851] py-3 shadow-md">
             {props.children}
         </div>
     )
