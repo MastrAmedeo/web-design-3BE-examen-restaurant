@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <div className="bg-[url(/photos_vin/_87A2399.jpg)] bg-fixed bg-cover bg-center">
         <div className="pt-150">
-          <div className="bg-[#697851] h-6"></div>
+          {/* <div className="bg-[#697851] h-6"></div>espace au dessus du titre  */}
           <h1 className = "text-center"><Parallax><TpBalise href = "#section-vin">
               Notre Vin
           </TpBalise></Parallax></h1>

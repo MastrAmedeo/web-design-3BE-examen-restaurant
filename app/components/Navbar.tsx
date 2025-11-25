@@ -8,7 +8,7 @@ type NavLinkProps = {
 
 function NavLink(props: NavLinkProps) {
     return (
-        <li className = "hover:bg-slate-600 py-3 px-3">
+        <li className = "hover:underline py-3 px-3">
             <Link href = {props.href} className="focus:outline-none focus-visible:underline focus-visible:underline-offset-4 focus-visible:decoration-2 focus-visible:decoration-black">
                 {props.children}
             </Link>

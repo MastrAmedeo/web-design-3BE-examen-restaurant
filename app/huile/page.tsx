@@ -8,7 +8,7 @@ export default function Home() {
       
       <div className="bg-[url(/photos_huile/287A8283.jpg)] bg-fixed bg-cover bg-center">
         <div className="pt-150">
-          <div className="bg-[#697851] h-6"></div>
+          {/* <div className="bg-[#697851] h-6"></div> */}
           <h1 className = "text-center"><Parallax><TpBalise href = "#section-huile">Notre huile
           </TpBalise></Parallax></h1>
         </div>
