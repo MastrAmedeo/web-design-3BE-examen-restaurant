@@ -1,7 +1,7 @@
 'use server'
 
 import { db } from '@/db'
-import { tasksTable } from '@/db/schema'
+import { tasksTable } from '../db/schema'
 import { eq } from 'drizzle-orm'
 import { headers } from 'next/headers'
 import { redirect } from 'next/navigation'
