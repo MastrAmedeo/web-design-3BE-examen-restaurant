@@ -7,11 +7,13 @@ export default function Home() {
         <>
         <div className="bg-[url(/photos_huile/287A8560.jpg)] bg-fixed bg-cover bg-center">
           <div className="pt-150">
-            <h1 className = "text-center"><Parallax><TpBalise href = "#section-Acceuil">Acceuil
-            </TpBalise></Parallax></h1>
+            <h1 className = "text-center">
+              <Parallax><TpBalise href = "#section-Acceuil">
+                Acceuil
+              </TpBalise></Parallax></h1>
           </div>
           <div className="bg-[#697851] min-h-screen pt-10">
-            <p className="" id = "section-Acceuil">
+            <p className="" id="section-Acceuil"style={{ scrollMarginTop: '13rem' }}>
               Soyez les binevenus chez Willie Wonka.
             </p>
           </div>
