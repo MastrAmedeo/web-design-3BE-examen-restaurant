@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Parallax from "./components/parallax"
+import Parallax from "./components/parallax";
 import TpBalise from "./components/TpBalise";
 
 export default function Home() {
