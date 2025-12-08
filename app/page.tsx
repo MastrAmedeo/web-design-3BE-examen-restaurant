@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Parallax from "./components/parallax";
 import TpBalise from "./components/TpBalise";
+import ToDoList from "./components/ToDoList";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
             <p className="" id="section-Accueil"style={{ scrollMarginTop: '13rem' }}>
               Soyez les binevenus chez Willie Wonka.
             </p>
+          </div>
+          <div>
+            <ToDoList />
           </div>
         </div>
         </>

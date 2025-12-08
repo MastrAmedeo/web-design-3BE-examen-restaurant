@@ -1,6 +1,6 @@
 import { addTask, getTasks } from '@/lib/tasks'
 
-export default async function TodoApp() {
+export default async function ToDoList() {
   const tasks = await getTasks()
   return (
     <>
