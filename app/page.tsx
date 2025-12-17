@@ -16,10 +16,8 @@ export default function Home() {
           <div className="bg-[#697851] min-h-screen pt-10">
             <p className="" id="section-Accueil"style={{ scrollMarginTop: '13rem' }}>
               Soyez les binevenus chez Willie Wonka.
+              <ToDoList />
             </p>
-          </div>
-          <div>
-            <ToDoList />
           </div>
         </div>
         </>
