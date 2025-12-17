@@ -5,14 +5,18 @@ export default async function ToDoList() {
   return (
     <>
       <form action={addTask}>
-        <label>
+        <label className = "px-5 py-3 rounded-md inset-ring inset-ring-gray-400">
           New task: <input name="title" />
         </label>
-        <button>Submit</button>
+        <button className= "inline-flex items-center rounded-md bg-[#313727]/80 px-5 py-3 text-m font-medium inset-ring inset-ring-gray-400/20">
+          Submit
+          </button>
       </form>
       <ul>
         {tasks.map((task, id) => (
-          <li key={id}>{task.title}</li>
+          <li key={id} className = "px-5 italic list-disc">
+            {task.title}
+          </li>
         ))}
       </ul>
     </>

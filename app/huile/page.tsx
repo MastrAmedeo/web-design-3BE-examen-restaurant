@@ -17,7 +17,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[#697851] min-h-screen pt-10">
-          <p className="" id = "section-huile" style={{ scrollMarginTop: '13rem' }}>
+          <p className="px-5" id = "section-huile" style={{ scrollMarginTop: '13rem' }}>
             ici nous venderons notre huile, si vous êtes intéressés, vous pouvez nous contacter.
           </p>
       </div>
