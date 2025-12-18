@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Parallax from "./components/parallax";
 import TpBalise from "./components/TpBalise";
-import Booking from "./components/booking";
-import Booking_display from "./components/booking_display";
+import Message from "./components/message";
 
 export default function Home() {
   return (
@@ -16,8 +15,8 @@ export default function Home() {
           </div>
           <div className="bg-[#697851] min-h-screen pt-10">
             <p className="px-5" id="section-Accueil"style={{ scrollMarginTop: '13rem' }}>
-              Soyez les binevenus chez Willie Wonka. Réservez votre table ici.
-              <Booking />
+              Soyez les binevenus chez Willie Wonka.
+              <Message />
             </p>
           </div>
         </div>
