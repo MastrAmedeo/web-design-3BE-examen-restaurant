@@ -2,7 +2,6 @@ import Image from "next/image";
 import Parallax from "./components/parallax";
 import TpBalise from "./components/TpBalise";
 import Booking from "./components/booking";
-import Booking_display from "./components/booking_display";
 
 export default function Home() {
   return (
