@@ -20,9 +20,8 @@ export default function Navbar() {
   return (
     <nav className = "fixed top-0 left-0 right-0 bg-[#697851]/80 text-[#151910] shadow-xl py-4 z-50">
         <ul className = "container mx-auto flex gap-15 justify-center">
-            <NavLink href="/vins">Notre vin</NavLink>
             <NavLink href="/">Accueil</NavLink>
-            <NavLink href="/huile">Notre huile</NavLink>
+            <NavLink href="/bookings">Réservations</NavLink>
         </ul>
     </nav>
   )

@@ -1,35 +1,26 @@
 'use server'
 
-import { db } from '@/db'
-import { tasksTable } from '../db/schema'
-import { eq } from 'drizzle-orm'
 import { headers } from 'next/headers'
 import { redirect } from 'next/navigation'
 
+
+const tasks: { title: string; done: boolean; }[] = []
+
 export async function getTasks() {
-  return await db.select().from(tasksTable)
+  return tasks
 }
 
-export async function addTask(form: FormData) {
-  await db.insert(tasksTable).values({
+export async function createTask(form: FormData) {
+  tasks.push({
     title: String(form.get('title')),
+    res_time: String(form.get('res_time')),
+    phone: String(form.get('phone')),
     done: false,
   })
   redirect((await headers()).get('referer') ?? '/')
 }
 
-export async function editTask(form: FormData) {
-  await db
-    .update(tasksTable)
-    .set({
-      title: String(form.get('title')),
-      done: form.get('done') === 'on',
-    })
-    .where(eq(tasksTable.id, String(form.get('id'))))
-  redirect((await headers()).get('referer') ?? '/')
-}
-
-export async function removeTask(id: string) {
-  await db.delete(tasksTable).where(eq(tasksTable.id, id))
+export async function deleteTask(id: number) {
+  tasks.splice(id, 1)
   redirect((await headers()).get('referer') ?? '/')
 }
